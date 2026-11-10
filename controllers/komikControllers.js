@@ -69,6 +69,7 @@ async function deleteKomik(req, res) {
     res.status(500).json({ error: 'An error occurred while deleting komik.' });
   }
 }
+<<<<<<< HEAD
 
 module.exports = {
     getAllKomik,
@@ -77,3 +78,5 @@ module.exports = {
     updateKomik,
     deleteKomik
 }
+=======
+>>>>>>> 7594185464e62af5f9daf0c36dbde40537485699

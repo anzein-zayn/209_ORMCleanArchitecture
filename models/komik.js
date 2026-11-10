@@ -3,17 +3,19 @@ module.exports = (sequelize, DataTypes) => {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
-            primaryKey: true,
+            primaryKey: true
         },
         title: {
             type: DataTypes.STRING,
+            allowNull: false
         },
         description: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING
         },
         author: {
             type: DataTypes.STRING,
-        },
+            allowNull: false
+        }
     });
     return Komik;
 };

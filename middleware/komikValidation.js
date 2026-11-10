@@ -21,7 +21,7 @@ const idSchema = Joi.object({
 
 function validateBody(schema) {
     return (req, res, next) => {
-        const { error } = schema.validate(req.body, {
+        const { error, value } = schema.validate(req.body, {
             abortEarly: false,
             convert: true,
             allowUnknown: false,
